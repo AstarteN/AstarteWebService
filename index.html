@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insult Generator</title>
+    <style>
+        body {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Make sure the body takes up the full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            color: rgb(255, 0, 0);
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            color: red;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid red;
+            border-radius: 5px;
+            width: 200px;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Insult Generator</h1>
+        <form action="/generate" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="name">Enter Your Name At Your Own Risk:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <button type="submit">Get an Insult</button>
+        </form>
+    </div>
+</body>
+
+</html>
